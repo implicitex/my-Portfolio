@@ -10,10 +10,10 @@ import { fadeIn, textVariant } from "@/app/utils/motion";
 type ServiceCardProps = {
 	index: number;
 	title: string;
-	icon: string;
+	// icon: string;
 };
 
-const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
+const ServiceCard = ({ index, title }: ServiceCardProps) => {
 	return (
 		<>
 			<Tilt
@@ -25,13 +25,12 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
 					className="w-full green-pink-gradient p-px rounded-[20px] shadow-card"
 				>
 					<div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-						<Image
-							src={icon}
+						{/* <Image
 							width={64}
 							height={64}
 							alt={title}
 							className="w-16 h-16 object-contain"
-						/>
+						/> */}
 						<h3 className="text-white text-[20px] font-bold text-center">
 							{title}
 						</h3>

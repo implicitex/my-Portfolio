@@ -25,16 +25,16 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      // iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <Image
-            src={experience.icon}
+          {/* <Image
+            // src={experience.icon}
             width={48}
             height={48}
-            alt={experience.company_name}
+            // alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
-          />
+          /> */}
         </div>
       }
     >
@@ -44,7 +44,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {/* {experience.company_name} */}
         </p>
       </div>
 
